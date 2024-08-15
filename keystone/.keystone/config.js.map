@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../keystone.ts"],
+  "sourcesContent": ["import { config, list } from '@keystone-6/core';\nimport { allowAll } from '@keystone-6/core/access';\nimport { text } from '@keystone-6/core/fields';\nexport default config({\n    db: {\n        provider: 'postgresql',\n        url: 'postgresql://keystone_owner:Blfr2KwHu1tG@ep-solitary-breeze-a1prsw6a.ap-southeast-1.aws.neon.tech/keystone?sslmode=require',\n    },\n    lists: {\n        User: list({\n            access: allowAll,\n            fields: {\n                name: text({ validation: { isRequired: true } }),\n                email: text({ validation: { isRequired: true }, isIndexed: 'unique' }),\n            },\n        }),\n    },\n});"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,kBAA6B;AAC7B,oBAAyB;AACzB,oBAAqB;AACrB,IAAO,uBAAQ,oBAAO;AAAA,EAClB,IAAI;AAAA,IACA,UAAU;AAAA,IACV,KAAK;AAAA,EACT;AAAA,EACA,OAAO;AAAA,IACH,UAAM,kBAAK;AAAA,MACP,QAAQ;AAAA,MACR,QAAQ;AAAA,QACJ,UAAM,oBAAK,EAAE,YAAY,EAAE,YAAY,KAAK,EAAE,CAAC;AAAA,QAC/C,WAAO,oBAAK,EAAE,YAAY,EAAE,YAAY,KAAK,GAAG,WAAW,SAAS,CAAC;AAAA,MACzE;AAAA,IACJ,CAAC;AAAA,EACL;AACJ,CAAC;",
+  "names": []
+}

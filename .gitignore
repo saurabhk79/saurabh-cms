@@ -1,6 +1,12 @@
-############################
-# OS X
-############################
+node_modules
+.env
+*-lock.json
+*.lock
+
+build
+dist
+/media
+.DS_Store
 
 .DS_Store
 .AppleDouble
@@ -10,17 +16,7 @@ Icon
 .Trashes
 ._*
 
-
-############################
-# Linux
-############################
-
 *~
-
-
-############################
-# Windows
-############################
 
 Thumbs.db
 ehthumbs.db
@@ -30,11 +26,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
-
-############################
-# Packages
-############################
 
 *.7z
 *.csv
@@ -60,21 +51,11 @@ $RECYCLE.BIN/
 *.out
 *.pid
 
-
-############################
-# Logs and databases
-############################
-
 .tmp
 *.log
 *.sql
 *.sqlite
 *.sqlite3
-
-
-############################
-# Misc.
-############################
 
 *#
 ssl
@@ -83,33 +64,18 @@ nbproject
 public/uploads/*
 !public/uploads/.gitkeep
 
-############################
-# Node.js
-############################
 
 lib-cov
 lcov.info
 pids
 logs
 results
-node_modules
 .node_history
-
-############################
-# Tests
-############################
 
 coverage
 
-############################
-# Strapi
-############################
-
-.env
 license.txt
 exports
 .strapi
-dist
-build
 .strapi-updater.json
 .strapi-cloud.json
